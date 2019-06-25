@@ -1,0 +1,26 @@
+<div class="container">
+<h1>{{message}}</h1>
+<table class="table  table-hover" id="products">
+  <thead>
+  <tr class="table-dark">
+    <td class="col-xs-1"> Company</td>
+    <td class="col-xs-1"> Comparison Rate*</td>
+    <td class="col-xs-1"> Current Rate</td>
+  </tr>
+  </thead>
+  <tbody   >
+    <tr *ngFor="let x of data">
+      <td class="company">
+        <img src="https://snapshots.canstar.com.au/widgets/assets/image/company/small_{{x.Company | lowercase}}_logo.png"/>
+        &nbsp;
+        <img src="https://widgets.canstar.com.au/widgets/assets/image/{{(x.StarRating + x.StarRating%2)/2}}star_small.png"/>
+      </td>
+      <td class="product"> {{x.ProductName}}</td>
+    <td>
+      {{x.ComparisonRate}}
+    </td>
+    <td>{{x.CurrentRate}} </td>
+  </tr>
+  </tbody>
+</table>
+</div>

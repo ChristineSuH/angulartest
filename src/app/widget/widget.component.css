@@ -1,0 +1,22 @@
+.widget{
+  margin: 10px 0px 0px 10px;
+  padding: 10px;
+  background-color:#f5f5f5;
+
+}
+
+.widget h4{
+  font-weight: 700;
+  color: #727272;
+}
+
+.widget:hover {
+  background-color: #fff;
+  border: #1998a6 1px solid;
+  cursor: pointer;
+}
+
+label{
+  color: #727272;
+}
+
